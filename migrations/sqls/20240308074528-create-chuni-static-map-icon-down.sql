@@ -1,1 +1,1 @@
-DROP TABLE actaeon_chuni_static_map_icon;
+DROP TABLE hikari_chuni_static_map_icon;

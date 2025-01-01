@@ -1,6 +1,6 @@
 services:
-  actaeon:
-    container_name: actaeon
+  hikari:
+    container_name: hikari
     build:
       dockerfile: ./Dockerfile
     environment:

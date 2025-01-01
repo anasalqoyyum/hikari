@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_chuni_static_music_ext (
+CREATE TABLE hikari_chuni_static_music_ext (
     songId INT NOT NULL,
     chartId INT NOT NULL,
 

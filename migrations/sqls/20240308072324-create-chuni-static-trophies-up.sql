@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_chuni_static_trophies (
+CREATE TABLE hikari_chuni_static_trophies (
     id INT NOT NULL,
     name VARCHAR(255),
     rareType TINYINT,

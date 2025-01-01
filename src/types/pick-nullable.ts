@@ -1,3 +1,5 @@
-export type PickNullable<T, K extends keyof NonNullable<T>> =
-	T extends undefined | null ? T :
-			Pick<NonNullable<T>, K> | null | undefined;
+export type PickNullable<T, K extends keyof NonNullable<T>> = T extends
+  | undefined
+  | null
+  ? T
+  : Pick<NonNullable<T>, K> | null | undefined

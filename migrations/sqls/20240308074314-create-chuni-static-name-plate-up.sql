@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_chuni_static_name_plate (
+CREATE TABLE hikari_chuni_static_name_plate (
     id INT NOT NULL,
     name VARCHAR(255),
     sortName VARCHAR(255),

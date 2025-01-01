@@ -1,1 +1,1 @@
-DROP TABLE actaeon_team_join_keys;
+DROP TABLE hikari_team_join_keys;

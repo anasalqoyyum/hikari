@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_arcade_join_keys (
+CREATE TABLE hikari_arcade_join_keys (
     id CHAR(10) NOT NULL,
     arcadeId INT NOT NULL,
 

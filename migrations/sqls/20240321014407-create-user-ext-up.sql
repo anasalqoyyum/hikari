@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_user_ext (
+CREATE TABLE hikari_user_ext (
     userId INT NOT NULL,
     uuid CHAR(36) NOT NULL,
     visibility INT NOT NULL,

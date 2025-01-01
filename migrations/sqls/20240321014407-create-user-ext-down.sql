@@ -1,1 +1,1 @@
-DROP TABLE actaeon_user_ext;
+DROP TABLE hikari_user_ext;

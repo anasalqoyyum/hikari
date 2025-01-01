@@ -1,1 +1,1 @@
-DROP TABLE actaeon_chuni_static_name_plate;
+DROP TABLE hikari_chuni_static_name_plate;

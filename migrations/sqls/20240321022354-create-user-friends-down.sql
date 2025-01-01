@@ -1,1 +1,1 @@
-DROP TABLE actaeon_user_friends;
+DROP TABLE hikari_user_friends;

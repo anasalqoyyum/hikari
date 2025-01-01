@@ -1,1 +1,1 @@
-DROP TABLE actaeon_arcade_ext;
+DROP TABLE hikari_arcade_ext;

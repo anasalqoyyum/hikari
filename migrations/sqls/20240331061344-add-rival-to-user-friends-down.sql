@@ -1,2 +1,2 @@
-ALTER TABLE actaeon_user_friends
+ALTER TABLE hikari_user_friends
 DROP COLUMN chuniRival;

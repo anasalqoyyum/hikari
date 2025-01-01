@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_team_join_keys (
+CREATE TABLE hikari_team_join_keys (
     id CHAR(10) NOT NULL,
     teamId CHAR(36) NOT NULL,
 
@@ -6,6 +6,6 @@ CREATE TABLE actaeon_team_join_keys (
     totalUses INT NOT NULL DEFAULT 0,
 
     PRIMARY KEY (id),
-    FOREIGN KEY (teamId) REFERENCES actaeon_teams(uuid)
+    FOREIGN KEY (teamId) REFERENCES hikari_teams(uuid)
         ON DELETE CASCADE ON UPDATE CASCADE
 );

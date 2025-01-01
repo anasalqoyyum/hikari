@@ -1,5 +1,5 @@
-ALTER TABLE actaeon_user_ext
+ALTER TABLE hikari_user_ext
 	DROP CONSTRAINT fk_team;
-ALTER TABLE actaeon_user_ext
-	ADD CONSTRAINT fk_team FOREIGN KEY(team) REFERENCES actaeon_teams(uuid)
+ALTER TABLE hikari_user_ext
+	ADD CONSTRAINT fk_team FOREIGN KEY(team) REFERENCES hikari_teams(uuid)
     ON DELETE CASCADE ON UPDATE CASCADE;

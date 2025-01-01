@@ -1,1 +1,1 @@
-DROP TABLE actaeon_arcade_join_keys;
+DROP TABLE hikari_arcade_join_keys;

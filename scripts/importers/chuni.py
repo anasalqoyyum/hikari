@@ -36,21 +36,21 @@ class Chuni(Importer):
 
     def import_map_icon(self):
         self.cur.executemany(
-            '''INSERT INTO actaeon_chuni_static_map_icon(id, name, sortName, imagePath)
+            '''INSERT INTO hikari_chuni_static_map_icon(id, name, sortName, imagePath)
             VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE name=name, sortName=sortName, imagePath=imagePath''',
             self.get_xml('mapIcon', 'MapIcon', *BASE_XPATHS)
         )
 
     def import_name_plate(self):
         self.cur.executemany(
-            '''INSERT INTO actaeon_chuni_static_name_plate(id, name, sortName, imagePath)
+            '''INSERT INTO hikari_chuni_static_name_plate(id, name, sortName, imagePath)
             VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE name=name, sortName=sortName, imagePath=imagePath''',
             self.get_xml('namePlate', 'NamePlate', *BASE_XPATHS)
         )
 
     def import_system_voice(self):
         self.cur.executemany(
-            '''INSERT INTO actaeon_chuni_static_system_voice(id, name, sortName, imagePath, cuePath)
+            '''INSERT INTO hikari_chuni_static_system_voice(id, name, sortName, imagePath, cuePath)
             VALUES (%s, %s, %s, %s, %s)
             ON DUPLICATE KEY UPDATE name=name, sortName=sortName, imagePath=imagePath, cuePath=cuePath''',
             self.get_xml('systemVoice', 'SystemVoice', *BASE_XPATHS, './cue/str')
@@ -58,7 +58,7 @@ class Chuni(Importer):
 
     def import_trophies(self):
         self.cur.executemany(
-            '''INSERT INTO actaeon_chuni_static_trophies(id, name, rareType, explainText)
+            '''INSERT INTO hikari_chuni_static_trophies(id, name, rareType, explainText)
             VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE name=name, rareType=rareType, explainText=explainText''',
             self.get_xml('trophy', 'Trophy', ('./name/id', int), './name/str', ('./rareType', int), './explainText')
         )
@@ -92,7 +92,7 @@ class Chuni(Importer):
         fields = ['songId', 'chartId', 'chartDesigner', 'tapJudgeCount', 'holdJudgeCount', 'slideJudgeCount',
                   'airJudgeCount', 'flickJudgeCount', 'allJudgeCount']
         self.cur.executemany(
-            f'''INSERT INTO actaeon_chuni_static_music_ext({','.join(fields)})
+            f'''INSERT INTO hikari_chuni_static_music_ext({','.join(fields)})
                 VALUES ({','.join(['%s'] * len(fields))})
                 ON DUPLICATE KEY UPDATE {','.join(f"{f}={f}" for f in fields)}''',
             inserts

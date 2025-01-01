@@ -1,12 +1,12 @@
-import { requireUser } from '@/actions/auth';
-import { getFriends } from '@/data/friend';
-import { Friends } from './friends';
+import { requireUser } from '@/actions/auth'
+import { getFriends } from '@/data/friend'
+import { Friends } from './friends'
 
-export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic'
 
 export default async function FriendsPage() {
-	const user = await requireUser();
-	const friends = structuredClone(await getFriends(user.id));
+  const user = await requireUser()
+  const friends = structuredClone(await getFriends(user.id))
 
-	return (<Friends friends={friends} />);
-};
+  return <Friends friends={friends} />
+}

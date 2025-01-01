@@ -1,4 +1,4 @@
 {
-    "table": "actaeon_migrations",
-    "sql-file": true
+  "table": "hikari_migrations",
+  "sql-file": true
 }

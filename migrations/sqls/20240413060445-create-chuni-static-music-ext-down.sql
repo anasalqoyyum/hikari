@@ -1,1 +1,1 @@
-DROP TABLE actaeon_chuni_static_music_ext;
+DROP TABLE hikari_chuni_static_music_ext;

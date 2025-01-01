@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_teams (
+CREATE TABLE hikari_teams (
     uuid CHAR(36),
     visibility INT NOT NULL,
     joinPrivacy INT NOT NULL,

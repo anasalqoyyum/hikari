@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_chuni_static_map_icon (
+CREATE TABLE hikari_chuni_static_map_icon (
     id INT NOT NULL,
     name VARCHAR(255),
     sortName VARCHAR(255),

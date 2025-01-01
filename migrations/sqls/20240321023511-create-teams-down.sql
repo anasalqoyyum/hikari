@@ -1,1 +1,1 @@
-DROP TABLE actaeon_teams;
+DROP TABLE hikari_teams;

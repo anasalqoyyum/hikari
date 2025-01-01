@@ -3,4 +3,4 @@
 rm -rf .next
 mkdir .next
 
-docker container cp actaeon:/app/.next/static/ .next/
+docker container cp hikari:/app/.next/static/ .next/

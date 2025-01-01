@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_user_friends (
+CREATE TABLE hikari_user_friends (
     user1 INT NOT NULL,
     user2 INT NOT NULL,
 

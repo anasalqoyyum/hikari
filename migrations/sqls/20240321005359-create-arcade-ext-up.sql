@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_arcade_ext (
+CREATE TABLE hikari_arcade_ext (
     arcadeId INT NOT NULL,
     uuid CHAR(36) NOT NULL,
     visibility INT NOT NULL,

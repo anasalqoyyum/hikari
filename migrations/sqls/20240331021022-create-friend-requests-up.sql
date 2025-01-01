@@ -1,4 +1,4 @@
-CREATE TABLE actaeon_friend_requests (
+CREATE TABLE hikari_friend_requests (
 	uuid CHAR(36) PRIMARY KEY,
 	user INT NOT NULL,
 	friend INT NOT NULL,

@@ -1,1 +1,1 @@
-DROP TABLE actaeon_global_config;
+DROP TABLE hikari_global_config;

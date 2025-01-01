@@ -1,2 +1,2 @@
-ALTER TABLE actaeon_user_ext
+ALTER TABLE hikari_user_ext
 DROP COLUMN dashboard;
